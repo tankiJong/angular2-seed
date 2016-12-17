@@ -1,0 +1,53 @@
+$theme: 'light';
+
+// color
+$blue: #3890ff;
+$green: #22c36a;
+$yellow: #f7b32b;
+$orange: #f56e25;
+$red: #f1483f;
+$purple: #7354e2;
+
+// grey
+$black-dark: #3d444f;
+$black-darker: #1f2126;
+$black-light: #595f69;
+$grey-dark: #9ba3af;
+$grey-light: #ccd1d9;
+$white-dark: #e4e7ed;
+$white-dark-lighter: #f1f3f6;
+$white-light: #f5f7fa;
+$white-lighter: #fbfcfc;
+$white: #ffffff;
+
+
+// for z-index
+
+$zindex-navbar:            1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           10700 !default;
+$zindex-navbar-fixed:      1030 !default;
+$zindex-modal-background:  1040 !default;
+$zindex-modal:             1050 !default;
+
+$zindex-layout: 900;
+
+$font-base: 14px;
+$font-family-base: -apple-system,BlinkMacSystemFont,Neue Haas Grotesk Text Pro,Arial Nova,Segoe UI,Helvetica Neue,\.PingFang SC,PingFang SC,Microsoft YaHei,Microsoft JhengHei,Source Han Sans SC,Noto Sans CJK SC,Source Han Sans CN,Noto Sans SC,Source Han Sans TC,Noto Sans CJK TC,Hiragino Sans GB,sans-serif;
+
+
+@if($theme = 'light'){
+  $color: $black-dark;
+  $icon-color: $grey-light;
+  $border-color: $white-dark;
+
+  $reverse-color: $white-dark;
+  $reverse-icon-color: $black-light;
+  $reverse-border-color: $black-dark;
+} else {
+  $color: $white-dark;
+  $icon-color: $black-light;
+  $border-color: $black-dark;
+}
+
